@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script type="module" src="index.js"></script> -->
+    <script type="module" src="src/hltok-code.ts"></script>
+
+    <style>
+      hltok-code::part(varname) {
+        color: red;
+      }
+      hltok-code::part(string) {
+        color: green;
+      }
+    </style>
+
+
+    <pre><hltok-code id="code" type="js">// hello-world.js
+console.log("Hello world!");</hltok-code></pre>
+  </body>
+</html>
